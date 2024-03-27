@@ -50,4 +50,7 @@ return {
     "hrsh7th/nvim-cmp",
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
+
+    "tpope/vim-fugitive",
+    "lewis6991/gitsigns.nvim",
 }
