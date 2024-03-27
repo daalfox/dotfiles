@@ -10,3 +10,4 @@ vim.opt.smartindent = true
 vim.opt.scrolloff = 4
 vim.opt.sidescrolloff = 8
 
+vim.opt.spelllang = { "en" }
