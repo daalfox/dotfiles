@@ -51,6 +51,23 @@ return {
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
 
+    -- git stuff
     "tpope/vim-fugitive",
     "lewis6991/gitsigns.nvim",
+
+    {
+        "nvim-tree/nvim-tree.lua",
+        version = "*",
+        lazy = false,
+        keys = {
+            {
+                "<leader>t",
+                function()
+                    require("nvim-tree.api").tree.toggle()
+                end,
+                mode = { "n", "v" },
+                desc = "Toggle neovim tree",
+            },
+        },
+    },
 }
