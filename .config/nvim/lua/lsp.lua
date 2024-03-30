@@ -3,7 +3,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local lspconfig = require("lspconfig")
 local utils = require("utils")
 
-local servers = { "lua_ls", "tsserver", "volar", "rust_analyzer" }
+local servers = { "lua_ls", "tsserver", "volar", "tailwindcss", "rust_analyzer" }
 for _, lsp in ipairs(servers) do
     if utils.isModuleAvailable(string.format("custom_lsp_setup.%s", lsp)) then
         lspconfig[lsp].setup(require(string.format("custom_lsp_setup.%s", lsp)))
