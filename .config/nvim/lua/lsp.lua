@@ -6,7 +6,9 @@ local utils = require("utils")
 local servers = { "lua_ls", "tsserver", "volar", "tailwindcss", "rust_analyzer" }
 for _, lsp in ipairs(servers) do
     if utils.isModuleAvailable(string.format("custom_lsp_setup.%s", lsp)) then
-        lspconfig[lsp].setup(require(string.format("custom_lsp_setup.%s", lsp)))
+        local cfg = require(string.format("custom_lsp_setup.%s", lsp))
+        cfg["capabilities"] = capabilities
+        lspconfig[lsp].setup(cfg)
     else
         lspconfig[lsp].setup({
             capabilities = capabilities,
