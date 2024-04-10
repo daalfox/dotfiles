@@ -31,6 +31,7 @@ return {
                 lua = { "stylua" },
                 vue = { "prettier" },
                 typescript = { "prettier" },
+                typescriptreact = { "prettier" },
             },
         },
         keys = {
