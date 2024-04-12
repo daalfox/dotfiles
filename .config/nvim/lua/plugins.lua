@@ -32,6 +32,7 @@ return {
                 vue = { "prettier" },
                 typescript = { "prettier" },
                 typescriptreact = { "prettier" },
+                json = { "prettier" },
             },
         },
         keys = {
