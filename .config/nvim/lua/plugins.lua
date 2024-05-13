@@ -33,6 +33,7 @@ return {
                 typescript = { "prettier" },
                 typescriptreact = { "prettier" },
                 json = { "prettier" },
+                markdown = { "prettier" },
             },
         },
         keys = {
