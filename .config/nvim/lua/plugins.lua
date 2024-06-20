@@ -32,6 +32,7 @@ return {
                 vue = { "prettier" },
                 typescript = { "prettier" },
                 typescriptreact = { "prettier" },
+                jsonc = { "prettier" },
                 json = { "prettier" },
                 markdown = { "prettier" },
             },
