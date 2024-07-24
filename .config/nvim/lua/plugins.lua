@@ -89,8 +89,12 @@ return {
                         gs.nav_hunk("prev")
                     end
                 end, "Prev Hunk")
-                map({ "n", "v" }, "<leader>gs", ":Gitsigns stage_hunk<CR>", "Stage Hunk")
-                map({ "n", "v" }, "<leader>gr", ":Gitsigns reset_hunk<CR>", "Reset Hunk")
+                map({ "n", "v" }, "<leader>gs", function()
+                    gs.stage_hunk({ vim.fn.line("."), vim.fn.line("v") })
+                end, "Stage Hunk")
+                map({ "n", "v" }, "<leader>gr", function()
+                    gs.reset_hunk({ vim.fn.line("."), vim.fn.line("v") })
+                end, "Reset Hunk")
             end,
         },
     },
