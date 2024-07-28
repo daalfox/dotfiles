@@ -7,7 +7,4 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.smartindent = true
 
-vim.opt.scrolloff = 4
-vim.opt.sidescrolloff = 8
-
-vim.opt.spelllang = { "en" }
+vim.opt.spelllang = { "en_us" }
