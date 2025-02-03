@@ -1,0 +1,5 @@
+require("config.lazy")
+require("config.core")
+require("config.lsp")
+require("config.diagnostic_config")
+require("config.luasnip_extend")
