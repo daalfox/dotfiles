@@ -1,0 +1,10 @@
+default-timeout=7000
+font=sans-serif 11
+width=400
+padding=20
+margin=4
+border-size=0
+border-radius=2
+
+background-color=#ffffffee
+text-color=#333333
