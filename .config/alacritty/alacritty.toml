@@ -1,0 +1,7 @@
+[font]
+size = 13
+
+[general]
+import = [
+    "~/.config/alacritty/themes/rose_pine_dawn.toml"
+]
